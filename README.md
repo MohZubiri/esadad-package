@@ -26,7 +26,7 @@ php artisan vendor:publish --provider="ESadad\PaymentGateway\Providers\ESadadSer
 ```
 ESADAD_MERCHANT_CODE=your_merchant_code
 ESADAD_MERCHANT_PASSWORD=your_merchant_password
-ESADAD_SERVER_URL=https://172.19.0.17:8002/
+ESADAD_SERVER_URL=Provider url
 ESADAD_PUBLIC_KEY_PATH=path/to/esadad_public_key.pem
 ```
 
