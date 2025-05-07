@@ -19,6 +19,18 @@ composer require esadad/payment-gateway
 php artisan vendor:publish --provider="ESadad\PaymentGateway\Providers\ESadadServiceProvider"
 ```
 
+## تنفيذ الترحيلات (Migrations)
+
+بعد نشر ملفات الترحيل، يمكنك تنفيذها لإنشاء الجداول اللازمة في قاعدة البيانات:
+
+```bash
+php artisan migrate
+```
+
+هذا سيقوم بإنشاء الجداول التالية:
+- `esadad_logs`: لتسجيل جميع عمليات الاتصال مع بوابة e-SADAD
+- `esadad_transactions`: لتخزين تفاصيل عمليات الدفع
+
 ## الإعداد
 
 قم بتعديل ملف `.env` وإضافة المعلومات التالية:
